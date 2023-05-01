@@ -1,10 +1,27 @@
 import React from "react";
+import pdf from "../../Resume.pdf";
 
 export default function Home() {
 	return (
 		<div>
-			<h1>Home Page</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque</p>
+			<a href={pdf}>Download</a>
+			<h1>frontend skills</h1>
+			<ul>
+				<li>Html</li>
+				<li>Css</li>
+				<li>Javascript</li>
+				<li>React</li>
+				<li>Bootstrap</li>
+				<li>Handlebars</li>
+			</ul>
+			<h1>backendend skills</h1>
+			<ul>
+				<li>Express</li>
+				<li>Nodejs</li>
+				<li>SQL</li>
+				<li>MongoDB</li>
+				<li>RestApi</li>
+			</ul>
 		</div>
 	);
 }

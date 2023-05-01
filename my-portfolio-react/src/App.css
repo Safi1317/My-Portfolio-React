@@ -1,1 +1,12 @@
+.projectcontainer {
+	display: flex;
+	flex-direction: column;
+}
+.projectImage {
+	width: 400px;
+	height: 300px;
+}
+.gitlogo {
+	width: 100px;
 
+}
