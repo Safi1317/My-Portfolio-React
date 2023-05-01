@@ -5,8 +5,14 @@ import Project from "../Project";
 function Portfolio() {
 	return (
 		<div className="projectcontainer">
-			<Project />
+		<div>	<Project /></div>
+    <div>	<Project /></div>
+    <div>	<Project /></div>
+    <div>	<Project /></div>
+    <div>	<Project /></div>
+    <div>	<Project /></div>
 		</div>
+
 	);
 }
 
