@@ -1,11 +1,12 @@
 import { Stack } from "@mui/material";
 import React from "react";
-// import Darkmode from "./Darkmode";
+import "./NavTabs.css";
+
 
 function NavTabs({ currentPage, handlePageChange }) {
 	return (
-		<div className="xApp-header flex" position="sticky" top={0}>
-			<Stack direction="row" gap={2}>
+		<nav className="xApp-header flex" position="sticky" top={0}>
+		
 				<ul className="nav nav-tabs">
 					<li className="nav-item">
 						<a href="#about" onClick={() => handlePageChange("About")} className={currentPage === "About" ? "nav-link active" : "nav-link"}>
@@ -27,12 +28,9 @@ function NavTabs({ currentPage, handlePageChange }) {
 							Resume
 						</a>
 					</li>
-					{/* <li className="nav-item">
-						<Darkmode />
-					</li> */}
 				</ul>
-			</Stack>
-		</div>
+		
+		</nav>
 	);
 }
 

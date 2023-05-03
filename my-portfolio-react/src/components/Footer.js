@@ -1,17 +1,12 @@
 import React from "react";
-import email from 
-export default function About() {
+import emailIcon from ".././images/emaillogo.jpg";
+import gitlogo from ".././images/GitHub-Logo.png";
+export default function footer() {
 	return (
-		<div>
-			
-			
-            <img src={} className="projectImage" alt="projectImage" />
-            <img src={} className="projectImage" alt="projectImage" />
-            <img src={} className="projectImage" alt="projectImage" />
-            
-
-
-			
+		<div className="icons">
+			<img src={emailIcon} className="iconimage" alt="projectImage" />
+			<img src={gitlogo} className="iconimage" alt="projectImage" />
+			<img src={gitlogo} className="iconimage" alt="projectImage" />
 		</div>
 	);
 }

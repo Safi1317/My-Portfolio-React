@@ -28,22 +28,22 @@ function Form() {
 
 			return;
 		}
-
+		console.log(document.querySelector("#email").value);
+		console.log(document.querySelector("#name").value);
+		console.log(document.querySelector("#message").value);
 		setname("");
 		setmessage("");
 		setEmail("");
 	};
 	return (
 		<div>
-			<div>
-				<p>Contact</p>
+			<div className="contact">
+				<p className="pContact">Contact</p>
 				<form className="form">
-					<input value={email} name="email" onChange={handleInputChange} type="email" placeholder="email" required />
-					<input value={name} name="name" onChange={handleInputChange} type="text" placeholder="name" required />
-					<input value={message} name="message" onChange={handleInputChange} type="test" placeholder="message" required />
-					<button type="button" onClick={handleFormSubmit}>
-						Submit
-					</button>
+					<input id="email" name="email" type="email" placeholder="email" required />
+					<input id="name" name="name" type="text" placeholder="name" minLength="3" required />
+					<input id="message" name="message" type="text" placeholder="message" required />
+					<button type="submit">Submit</button>
 				</form>
 				{errorMessage && (
 					<div>

@@ -1,18 +1,18 @@
 import React from "react";
 import "../../App.css";
 import Project from "../Project";
+import { Box } from "@mui/material";
 
 function Portfolio() {
 	return (
-		<div className="projectcontainer">
-		<div>	<Project /></div>
-    <div>	<Project /></div>
-    <div>	<Project /></div>
-    <div>	<Project /></div>
-    <div>	<Project /></div>
-    <div>	<Project /></div>
-		</div>
-
+		<Box sx={{ display: "flex", flexWrap: "wrap" }}>
+			<Project />
+			<Project />
+			<Project />
+			<Project />
+			<Project />
+			<Project />
+		</Box>
 	);
 }
 

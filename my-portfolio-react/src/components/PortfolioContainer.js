@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import NavTabs from "./NavTabs";
 import Portfolio from "./Header/Portfolio";
 import About from "./Header/About";
 import Resume from "./Header/Resume";
 import Contact from "./Header/Contact";
-// import { Box, Button, Container, Drawer, FormControl, Grid, InputLabel, MenuItem, Paper, Select, Skeleton, Stack, TextField } from "@mui/material";
-// import IconButton from "@mui/material/IconButton";
+import Footer from "./Footer";
+import { Box, IconButton, useTheme } from "@mui/material";
+import { ColorModeContext } from "../App";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
 
-// import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
-// import Brightness4Icon from "@mui/icons-material/Brightness4";
-// import Brightness7Icon from "@mui/icons-material/Brightness7";
 export default function PortfolioContainer() {
+	const theme = useTheme();
+	const colorMode = useContext(ColorModeContext);
 	const [currentPage, setCurrentPage] = useState("Home");
 
 	const renderPage = () => {
+		if (currentPage === "Home") {
+			return (
+				<>
+					<About />
+					<Footer />
+				</>
+			);
+		}
 		if (currentPage === "Resume") {
 			return <Resume />;
 		}
@@ -31,10 +41,22 @@ export default function PortfolioContainer() {
 	const handlePageChange = (page) => setCurrentPage(page);
 
 	return (
-		<div>
-			<NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+		<Box
+			sx={{
+				bgcolor: "background.default",
+				color: "text.primary",
+				
+			}}
+		>
+			{/* {theme.palette.mode} mode */}
+			<IconButton sx={{ ml: 3 }} onClick={colorMode.toggleColorMode} color="inherit">
+				{theme.palette.mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
+			</IconButton>
+			<div>
+				<NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
 
-			{renderPage()}
-		</div>
+				{renderPage()}
+			</div>
+		</Box>
 	);
 }

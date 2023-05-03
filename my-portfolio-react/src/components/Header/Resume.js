@@ -3,8 +3,8 @@ import pdf from "../../Resume.pdf";
 
 export default function Home() {
 	return (
-		<div>
-			<a href={pdf}>Download</a>
+		<div className="resume">
+			<button><a href={pdf}>Download</a></button>
 			<h1>frontend skills</h1>
 			<ul>
 				<li>Html</li>
