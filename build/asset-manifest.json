@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio-React/static/css/main.6892da8d.css",
+    "main.js": "/My-Portfolio-React/static/js/main.af2837fa.js",
+    "static/js/787.fe039db8.chunk.js": "/My-Portfolio-React/static/js/787.fe039db8.chunk.js",
+    "static/media/Safia.jpg": "/My-Portfolio-React/static/media/Safia.b50fc7c8b21bbb880237.jpg",
+    "static/media/moon-fish-screenshot.png": "/My-Portfolio-React/static/media/moon-fish-screenshot.54d04c1edc0ce567bc8d.png",
+    "static/media/Resume.pdf": "/My-Portfolio-React/static/media/Resume.46850e61249b8ef0962e.pdf",
+    "index.html": "/My-Portfolio-React/index.html",
+    "main.6892da8d.css.map": "/My-Portfolio-React/static/css/main.6892da8d.css.map",
+    "main.af2837fa.js.map": "/My-Portfolio-React/static/js/main.af2837fa.js.map",
+    "787.fe039db8.chunk.js.map": "/My-Portfolio-React/static/js/787.fe039db8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6892da8d.css",
+    "static/js/main.af2837fa.js"
+  ]
+}

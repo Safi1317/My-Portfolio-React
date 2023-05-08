@@ -8,7 +8,7 @@ export default function About() {
 		<div className="container">
 			<div className="aboutwrap">
 				<div className="profileImage">
-					<img src={profileimg} alt="projectImage" />
+					<img src={profileimg} alt="profileImage" />
 				</div>
 				<div className="aboutContent">
 					<h1>Safia Ali</h1>
