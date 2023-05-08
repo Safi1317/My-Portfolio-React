@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+// import "../../App.css";
 import Project from "../Project";
 import { Box } from "@mui/material";
 

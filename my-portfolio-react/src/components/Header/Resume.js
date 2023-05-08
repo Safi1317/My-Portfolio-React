@@ -1,6 +1,6 @@
 import React from "react";
 import pdf from "../../Resume.pdf";
-
+// import "../App.css";
 export default function Home() {
 	return (
 		<div className="resume">

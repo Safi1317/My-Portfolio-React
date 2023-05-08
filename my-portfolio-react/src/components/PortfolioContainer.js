@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import "../App.css";
 import NavTabs from "./NavTabs";
 import Portfolio from "./Header/Portfolio";
 import About from "./Header/About";
@@ -18,10 +19,10 @@ export default function PortfolioContainer() {
 	const renderPage = () => {
 		if (currentPage === "Home") {
 			return (
-				<>
+				<div className="home">
 					<About />
-					<Footer />
-				</>
+
+				</div>
 			);
 		}
 		if (currentPage === "Resume") {
@@ -45,17 +46,18 @@ export default function PortfolioContainer() {
 			sx={{
 				bgcolor: "background.default",
 				color: "text.primary",
-				
+
 			}}
 		>
 			{/* {theme.palette.mode} mode */}
 			<IconButton sx={{ ml: 3 }} onClick={colorMode.toggleColorMode} color="inherit">
 				{theme.palette.mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
 			</IconButton>
-			<div>
+			<div className="pagewrapper">
 				<NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
 
 				{renderPage()}
+				<Footer />
 			</div>
 		</Box>
 	);
