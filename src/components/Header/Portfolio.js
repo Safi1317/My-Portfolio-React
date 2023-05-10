@@ -5,12 +5,7 @@ import { Box } from "@mui/material";
 
 function Portfolio() {
 	return (
-		<Box sx={{ display: "flex", flexWrap: "wrap" }}>
-			<Project />
-			<Project />
-			<Project />
-			<Project />
-			<Project />
+		<Box >
 			<Project />
 		</Box>
 	);
