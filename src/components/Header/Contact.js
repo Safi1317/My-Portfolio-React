@@ -57,23 +57,23 @@ function Form() {
 		setEmail("");
 	};
 	return (
-		<div>
-			<div className="contact">
-				<p className="pContact">Contact</p>
-				<form className="form">
-					<input id="email" name="email" type="email" placeholder="email" required onBlur={(e) => validate(e, validateEmail)} />
-					<input id="name" name="name" type="text" placeholder="name" minLength="3" required onBlur={(e) => validate(e, notNull)} />
-					<input id="message" name="message" type="text" placeholder="message" required />
-					<button type="submit">Submit</button>
-				</form>
-				{(errorMessage || Object.entries(validations).length) && (
-					<div>
-						<p className="error-text">{errorMessage}</p>
-						{Object.entries(validations).map(([key, value]) => <li key={key}>{key}: required</li>)}
-					</div>
-				)}
-			</div>
+
+		<div className="contact">
+			<p className="pContact">Contact</p>
+			<form className="form">
+				<input id="email" name="email" onChange={handleInputChange} type="email" placeholder="email" required onBlur={(e) => validate(e, validateEmail)} />
+				<input id="name" name="name" onChange={handleInputChange} type="text" placeholder="name" required onBlur={(e) => validate(e, notNull)} />
+				<input id="message" name="message" onChange={handleInputChange} type="text" placeholder="message" required onBlur={(e) => validate(e, notNull)} />
+				<button type="submit" onClick={handleFormSubmit}>Submit</button>
+			</form>
+			{(errorMessage || Object.entries(validations).length) && (
+				<div>
+					<p className="error-text">{errorMessage}</p>
+					{Object.entries(validations).map(([key, value]) => <li key={key}>{key}: required</li>)}
+				</div>
+			)}
 		</div>
+
 	);
 }
 

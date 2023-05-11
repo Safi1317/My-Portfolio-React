@@ -14,14 +14,11 @@ export default function About() {
 					<h1>Safia Ali</h1>
 					<h2>Fullstack Developer</h2>
 					<p className="about">
-						Integer cursus brices.cursus bibendum sem  molestie urna. Aliquam semper ultrices
-						varius. Aliquam faucibus sit e placerat lacus imperdietIn. Vestibulum in aliquet sem, quis molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices.cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna. Aliquam semper ultrices
+						Hi there!!!
 
 					</p>
-					<p>Integt magna a ultrices.cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna. Aliquam semper ultrices
-						varius. Aliquam faucibus sitacus imperdiet</p>
-					<p>Integer cursus bibenes v quis molestie urna. Aliquam semper ultrices
-						varius. Aliquam faucibus sit amet magna a ultricnean pellentesque placerat lacus imperdiet</p>
+					<p>Im a student of the University of Minnesota Full Stack developer coding bootcamp. I enjoy solving complex problems and learning new skills and always looking for new challenges and opportunities to grow as a developer. I have experience in the latest in Html, CSS, JavaScript, jQuery, Nodejs, SQL. MongoDB and React.</p>
+			
 
 				</div>
 			</div>
